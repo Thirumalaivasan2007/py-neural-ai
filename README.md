@@ -67,4 +67,6 @@ python main.py
 3. **Chat AI Interface:** Ask questions through the interactive interface.
 4. **History Tracking:** Conversations stick to your account.
 5. **Aesthetic UI:** A carefully curated slate/teal dark theme powered by Tailwind with modern fluid animations.
+# Created By Thirumalaivasan | B.E. CSE
+
 
