@@ -1,7 +1,6 @@
 # Zylron AI Full-Stack Application
 
-Welcome to Zylron AI! This is a complete full-stack web application featuring user authentication, conversation persistence, and real-time AI responses using Node.js, Express, MongoDB, and React with TailwindCSS.
-
+Welcome to Zylron AI! A powerful, privacy-first conversational AI platform powered by a custom Python AI engine and seamlessly integrated with a modern MERN stack.
 ## Project Structure
 ```
 c:\Zylron AI\
@@ -14,7 +13,8 @@ c:\Zylron AI\
 │   ├── routes/         # Express endpoint configurations
 │   ├── server.js       # Main server entrypoint
 │   └── package.json    # Backend dependencies
-│
+├── Zylron-AI-Master/
+│   ├── ai-engine/      # Python AI Model & Inference Logic
 ├── frontend/           # React + Vite Client
 │   ├── src/
 │   │   ├── components/ # Reusable UI components
@@ -24,14 +24,24 @@ c:\Zylron AI\
 │   │   ├── App.jsx     # App configuration
 │   │   └── index.css   # Main Tailwind stylesheet
 │   └── package.json    # Frontend dependencies
+
 ```
 
 ## Setup Instructions
 
 **Prerequisites:** Ensure you have Node.js and MongoDB installed on your system.
-Your MongoDB URI defaults to `mongodb://127.0.0.1:27017/nexora`. Ensure MongoDB is running.
+Python 3.10+ installed.MongoDB running locally or via Atlas. Ensure MongoDB is running.
 
-### 1. Setup Backend
+### 1.Setup Python AI Engine
+Open a terminal and start the Python model:
+
+cd ai-engine
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python main.py
+
+### 2. Setup Backend
 1. Open up a terminal / command prompt.
 2. Navigate to the `backend` directory:
    `cd backend`
@@ -41,7 +51,7 @@ Your MongoDB URI defaults to `mongodb://127.0.0.1:27017/nexora`. Ensure MongoDB 
    `npm run dev` or `npm start`
 *(The backend server will run on http://localhost:5000)*
 
-### 2. Setup Frontend
+### 3. Setup Frontend
 1. Open up a separate terminal.
 2. Navigate to the `frontend` directory:
    `cd frontend`
