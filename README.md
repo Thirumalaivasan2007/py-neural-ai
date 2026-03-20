@@ -1,10 +1,10 @@
-# Nexora AI Full-Stack Application
+# Zylron AI Full-Stack Application
 
-Welcome to Nexora AI! This is a complete full-stack web application featuring user authentication, conversation persistence, and real-time AI responses using Node.js, Express, MongoDB, and React with TailwindCSS.
+Welcome to Zylron AI! This is a complete full-stack web application featuring user authentication, conversation persistence, and real-time AI responses using Node.js, Express, MongoDB, and React with TailwindCSS.
 
 ## Project Structure
 ```
-c:\project ai\
+c:\Zylron AI\
 │
 ├── backend/            # Express.js REST API
 │   ├── config/         # Database configuration
